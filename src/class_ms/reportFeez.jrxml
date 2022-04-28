@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="97095eac-5e05-4ef0-9602-3c2c73f1fde5">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     *
+FROM
+     feez]]>
+	</queryString>
+	<field name="room_id" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="stu_id" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="stu_name" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="class_id" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="grade" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="1week" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="2week" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="3week" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="4week" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="exweek" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="feez_month" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="month" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="year" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="count" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="feez_type" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="74" splitType="Stretch">
+			<staticText>
+				<reportElement x="131" y="0" width="320" height="34" uuid="ec3871fe-2497-4ed9-9e77-667c4110721e"/>
+				<textElement>
+					<font fontName="Californian FB" size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Mahagedara Education Center]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="195" y="35" width="150" height="28" forecolor="#666666" uuid="a39870b8-e4a9-4a87-9577-e2f939cb2b1b"/>
+				<textElement textAlignment="Center">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Daily Fees Report]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="62" width="552" height="1" uuid="ad307f29-e073-4507-a737-fa74ee4fd720"/>
+			</line>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="50" splitType="Stretch">
+			<textField>
+				<reportElement x="87" y="0" width="54" height="20" uuid="d19c00a3-ab9a-4a3a-9652-9ee4884ae2e3"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{room_id}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="15" y="1" width="59" height="20" uuid="9e62c749-7ac7-49e2-8193-63f93061a3c3"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Room ID : ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="155" y="0" width="58" height="20" uuid="9ee76048-2e59-4d74-9053-ba2bbd4da8a6"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Class ID :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="289" y="0" width="56" height="20" uuid="1cc0a769-eb10-4d2e-b9b1-7b13110aa3bc"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Month :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="445" y="1" width="38" height="20" uuid="98ea734c-25c3-4a66-94f9-6465f68a325c"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Year :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="222" y="1" width="37" height="20" uuid="88e0a828-b378-4b5b-a7cd-4c0993fe0046"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{class_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="345" y="0" width="79" height="20" uuid="4852c4d3-7f6c-4b8d-bfc6-616c3838c617"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{month}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="489" y="1" width="63" height="20" uuid="7fb84ec9-340d-40b1-a4e1-b64db98214f3"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{year}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="25" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="51" height="20" uuid="1354c079-169b-4902-afbd-0add7b1169e3"/>
+				<textElement>
+					<font size="12" isBold="true" isItalic="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[ ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="51" y="0" width="120" height="20" uuid="5ce82ece-bfbb-48c2-8de8-60a4163da7f2"/>
+				<textElement>
+					<font size="12" isBold="true" isItalic="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Student Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="182" y="0" width="46" height="20" uuid="a8ff0021-14ef-4f9f-95c8-aa06cdd6fa13"/>
+				<textElement>
+					<font size="12" isBold="true" isItalic="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Week1]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="245" y="0" width="45" height="20" uuid="046faeec-f7d7-4ce3-9519-a504b00b6d0a"/>
+				<textElement>
+					<font size="12" isBold="true" isItalic="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Week2]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="301" y="0" width="44" height="20" uuid="6ebefe88-11e8-4503-b0b1-f06b4edef50f"/>
+				<textElement>
+					<font size="12" isBold="true" isItalic="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[ Week3]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="360" y="0" width="44" height="20" uuid="117534c6-8b79-4639-978f-0763c0f72267"/>
+				<textElement>
+					<font size="12" isBold="true" isItalic="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Week4]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="414" y="0" width="52" height="20" uuid="d7ccf204-0bbb-430f-a03c-33db5c4b21cf"/>
+				<textElement>
+					<font size="12" isBold="true" isItalic="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Ex Week]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="483" y="0" width="72" height="20" uuid="58a21308-502b-49d5-89bc-4d354c68a9c9"/>
+				<textElement>
+					<font size="12" isBold="true" isItalic="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Total Pay]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="23" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="49" height="20" uuid="b28bf12e-27d7-4b18-8cf8-3194bce093d7"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{stu_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="51" y="0" width="131" height="20" uuid="7ee6abb8-7107-43a9-ba80-6209ee28a59d"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{stu_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="195" y="0" width="18" height="20" uuid="b42fbd98-a8d4-4e67-85c8-11d794697ba0"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{1week}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="256" y="0" width="19" height="20" uuid="4102c0fe-0941-4503-b6c1-8c6ee2a59534"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{2week}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="312" y="0" width="22" height="20" uuid="5e7c4f92-7d41-42a7-b989-87808f59863d"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{3week}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="372" y="0" width="19" height="20" uuid="66064269-8189-4767-b851-be69b5333801"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{4week}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="430" y="0" width="21" height="20" uuid="fd7bb45d-f0a8-47cf-b270-b5f0fcf3672b"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{exweek}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="483" y="0" width="69" height="20" uuid="255c6ae5-0207-4191-a107-42226ef0b5c6"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{count}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="36" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="71" splitType="Stretch">
+			<staticText>
+				<reportElement x="155" y="15" width="242" height="20" uuid="af84d7f5-bf28-4245-8404-a9e07222eba0"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Software by DEBUG SOFTWARE SOLUTION]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="155" y="35" width="242" height="20" uuid="12bb801e-8bc9-483c-aef9-b4fa25e0386b"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[HOT LINE - 077 990 8148]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="162" y="51" width="242" height="20" uuid="d5749ada-38fc-4606-879c-c68c534640fc"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Email : chamdmadu903@gmail.com]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="46" splitType="Stretch"/>
+	</summary>
+</jasperReport>
