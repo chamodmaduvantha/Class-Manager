@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="ba5150a3-9252-4951-ac10-3ab52448286b">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT * FROM room]]>
+	</queryString>
+	<field name="room_id" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="class_id" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="fezz_type" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="feez" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="86" splitType="Stretch">
+			<staticText>
+				<reportElement x="127" y="0" width="320" height="34" uuid="23d0b7ad-8f02-48ef-b3a1-ab39d2609edf"/>
+				<textElement>
+					<font fontName="Californian FB" size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Mahagedara Education Center]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="192" y="34" width="162" height="28" forecolor="#666666" uuid="0cd28e63-0126-4ebb-9c42-4244390dcdb2"/>
+				<textElement textAlignment="Center">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Room Report]]></text>
+			</staticText>
+			<line>
+				<reportElement x="3" y="62" width="552" height="1" uuid="5efa7ce2-54a2-4d99-8081-afc1e2195cdf"/>
+			</line>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="26" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="43" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="127" height="20" uuid="aaa4766f-dbcd-4c8b-b52a-590b334dedd4"/>
+				<textElement>
+					<font size="14" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Room ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="160" y="0" width="101" height="20" uuid="40348ed5-81bd-4709-89f3-b61ea99f3cef"/>
+				<textElement>
+					<font size="14" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Class ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="291" y="0" width="119" height="20" uuid="3450e29b-2e84-4a08-8e66-c7d00b6ebc8b"/>
+				<textElement>
+					<font size="14" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Fees Type]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="430" y="0" width="125" height="20" uuid="71b9fff9-e9ec-4909-b615-75428b1143dc"/>
+				<textElement>
+					<font size="14" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Fees]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="29" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="127" height="20" uuid="fcb52aed-e8f2-417d-b9d4-22fd46772f61"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{room_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="160" y="0" width="101" height="20" uuid="60e874b3-441a-49f9-8682-0af6505eb464"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{class_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="291" y="0" width="119" height="20" uuid="4bb903ff-05e3-4646-91d9-dd8ce9fbf158"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fezz_type}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="430" y="0" width="125" height="20" uuid="5c1793bc-79c7-4b09-a087-51c5b4f8082c"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{feez}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="29" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="71" splitType="Stretch">
+			<staticText>
+				<reportElement x="157" y="0" width="242" height="20" uuid="b1526e4d-9f6e-418a-a0b5-58bc1956e473"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Software by DEBUG SOFTWARE SOLUTION]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="157" y="20" width="242" height="20" uuid="8e5b550c-94b3-4295-bae2-a8d292c51b1b"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[HOT LINE - 077 990 8148]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="157" y="40" width="242" height="20" uuid="e72c60e0-6df9-49dc-b593-17111dc82b11"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Email : chamdmadu903@gmail.com]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
